@@ -7,17 +7,38 @@ function writeCards(names, occasion) {
     }
     return thankYouMessages;
   }
+  writeCards(['Elnathan','Wedding']);
+  // Function of a count down from a number and log each number to the console
   
-  // Function to count down from a number and log each number to the console
-  function countDown(number) {
-    while (number >= 0) {
-      console.log(number);
-      number--;
+    
+    function countDown(integer) {
+       
+      while (integer>=0 && integer <= 10 ) {
+        console.log(integer);
+        integer--;
+      }
+    return integer;
     }
+    
+    // Example: Count down from 10 to 1
+    countDown(10);
+
+  
+   //loops lessons 
+   for(let age =30;age<31;age++){
+    console.log(`I'm ${age} years old. Happy birthday to me!`);
+
+   }
+   
+const gift=['blankets','clothes','sweets'];
+function wrapGifts(gift){
+  for(let i=0;i<gift.length;i++){
+    console.log(`We bought ${gift[i]} and added a cow!`);
   }
+  return gift
+}
   
-  
-  
+  wrapGifts(gift);
   
   
   
